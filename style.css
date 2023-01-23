@@ -24,7 +24,6 @@ footer {
   border-top: 1px solid;
 }
 
-footer,
 #site_header {
   text-align: center;
 }
@@ -63,7 +62,7 @@ time,
 }
 
 img {
-  max-width: 75%;
+  width: 256px;
 }
 
 .tag {

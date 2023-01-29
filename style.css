@@ -68,3 +68,12 @@ img {
 .tag {
   font-weight: bold;
 }
+
+code {
+  font-family: Consolas,"courier new";
+  color: white;
+  background-color: #2d2d2d;
+  padding: 1px;
+  margin: 1px;
+  font-size: 105%;
+}

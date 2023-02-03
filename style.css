@@ -77,3 +77,7 @@ code {
   margin: 1px;
   font-size: 105%;
 }
+
+li {
+  padding-bottom: 10px;
+}

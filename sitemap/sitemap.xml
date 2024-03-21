@@ -9,38 +9,49 @@
 
 <url>
   <loc>https://willscyber.net/</loc>
-  <lastmod>2023-02-01T07:32:29+00:00</lastmod>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://willscyber.net/blog/blog.html</loc>
-  <lastmod>2023-02-01T07:32:29+00:00</lastmod>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://willscyber.net/tools/tools.html</loc>
-  <lastmod>2023-02-01T07:32:29+00:00</lastmod>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://willscyber.net/playList/playList.html</loc>
-  <lastmod>2023-02-01T07:32:29+00:00</lastmod>
+  <loc>https://willscyber.net/bookmarks/bookmarks.html</loc>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://willscyber.net/blog/post1/buckeye-days-2023.html</loc>
-  <lastmod>2023-02-01T07:32:29+00:00</lastmod>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://willscyber.net/blog/post2/chaperoning-first-field-trip.html</loc>
-  <lastmod>2023-02-02T23:37:00+00:00</lastmod>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://willscyber.net/blog/post3/arizona-indian-festival.html</loc>
-  <lastmod>2023-02-05T01:24:00+00:00</lastmod>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
   <priority>0.64</priority>
 </url>
+<url>
+  <loc>https://willscyber.net/blog/post4/NYtrip.html</loc>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://willscyber.net/blog/post5/picodeGallo.html</loc>
+  <lastmod>2024-03-17T04:36:06+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
 
 </urlset>

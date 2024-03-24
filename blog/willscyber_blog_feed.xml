@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+<channel>
+<title>WILL's CYBER BLOG</title>
+<link>https://willscyber.net/blog/blog.html</link>
+<description>WILL's CYBER BLOG</description>
+<language>en-us</language>
+<lastBuildDate>Sat, 23 Mar 2024 20:56:43 GMT</lastBuildDate>
+<pubDate>Sat, 23 Mar 2024 20:56:43 GMT</pubDate>
+<item>
+<title>Buckeye Days 2023 and Rodeo</title>
+<link>post1/buckeye-days-2023.html</link>
+<description>Published on Sat, 28 Jan 2023 00:00:00</description>
+<pubDate>Sat, 28 Jan 2023 00:00:00</pubDate>
+</item>
+<item>
+<title>Chaperoning First Field Trip</title>
+<link>post2/chaperoning-first-field-trip.html</link>
+<description>Published on Thu, 02 Feb 2023 20:58:00</description>
+<pubDate>Thu, 02 Feb 2023 20:58:00</pubDate>
+</item>
+<item>
+<title>Arizona Indian Festival 2023</title>
+<link>post3/arizona-indian-festival.html</link>
+<description>Published on Sun, 05 Feb 2023 12:22:00</description>
+<pubDate>Sun, 05 Feb 2023 12:22:00</pubDate>
+</item>
+<item>
+<title>Conference in New York</title>
+<link>post4/NYtrip.html</link>
+<description>Published on Sat, 13 May 2023 12:22:00</description>
+<pubDate>Sat, 13 May 2023 12:22:00</pubDate>
+</item>
+<item>
+<title>Pico de Gallo, hoem recipes</title>
+<link>post5/picodeGallo.html</link>
+<description>Published on Sat, 13 May 2023 12:22:00</description>
+<pubDate>Sat, 13 May 2023 12:22:00</pubDate>
+</item>
+</channel>
+</rss>

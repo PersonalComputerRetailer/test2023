@@ -32,7 +32,7 @@ def generate_rss(articles_info):
     for article in articles_info:
         rss_feed += '<item>\n'
         rss_feed += f'<title>{article["title"]}</title>\n'
-        rss_feed += f'<link>{article["link"]}</link>\n'
+        rss_feed += f'<link>blog/{article["link"]}</link>\n'
         rss_feed += f'<description>{article["description"]}</description>\n'
         rss_feed += f'<pubDate>{article["pubDate"]}</pubDate>\n'  # Use the publication date of the article
         rss_feed += '</item>\n'

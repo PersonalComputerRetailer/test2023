@@ -34,6 +34,9 @@ publishDir = "public"
     branch = "hugo"
     target = "public"
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
   author = "WILL"
   description = "Tech notes, experiments, and thoughts from my cyber warehouse."

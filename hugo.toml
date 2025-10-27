@@ -21,3 +21,6 @@ publishDir = "public"
   author = "WILL"
   description = "Tech notes, experiments, and thoughts from my cyber warehouse."
 
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

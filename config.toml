@@ -1,5 +1,23 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://willscyber.net/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'Wills CYBER WAREHOUSE'
 theme = "PaperMod"
+publishDir = "public"
+
+# If you're deploying from the `hugo` branch
+[deployment]
+  [[deployment.targets]]
+    name = "github"
+    URL = "https://github.com/PersonalComputerRetailer/test2023.git"
+    branch = "hugo"
+    target = "public"
+
+# Optional settings
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[params]
+  author = "WILL"
+  description = "Tech notes, experiments, and thoughts from my cyber warehouse."
 

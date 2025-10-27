@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Wills CYBER WAREHOUSE</title>
+    <title>Posts on Will&#39;s CYBER WAREHOUSE</title>
     <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Wills CYBER WAREHOUSE</description>
+    <description>Recent content in Posts on Will&#39;s CYBER WAREHOUSE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Oct 2025 20:47:16 -0700</lastBuildDate>
@@ -13,7 +13,7 @@
       <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Sun, 26 Oct 2025 20:47:16 -0700</pubDate>
       <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;p&gt;Hi this is the first post&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi this is the first post&#xA;#HHHH&#xA;&lt;strong&gt;tes&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,8 +1,30 @@
 baseURL = 'https://willscyber.net/'
 languageCode = 'en-us'
-title = 'Wills CYBER WAREHOUSE'
-theme = "PaperMod"
+title = "Will's CYBER WAREHOUSE"
+theme = "mainroad"
 publishDir = "public"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    identifier = "tools"
+    name = "Tools"
+    url = "/tools/"
+    weight = 30
+
+  [[menu.main]]
+    identifier = "bookmarks"
+    name = "Booksmarks"
+    url = "/bookmarks/"
+    weight = 40
+
+
+
 
 # If you're deploying from the `hugo` branch
 [deployment]

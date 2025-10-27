@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wills CYBER WAREHOUSE</title>
+    <title>Will&#39;s CYBER WAREHOUSE</title>
     <link>http://localhost:1313/</link>
-    <description>Recent content on Wills CYBER WAREHOUSE</description>
+    <description>Recent content on Will&#39;s CYBER WAREHOUSE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Oct 2025 20:47:16 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>About Will</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Sun, 26 Oct 2025 20:45:24 -0700</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;hello-im-will-this-is-my-permanent-cyber-space&#34;&gt;Hello! I&amp;rsquo;m Will. This is my permanent cyber space.&lt;/h2&gt;&#xA;&lt;p&gt;&lt;img src=&#34;http://localhost:1313/static/corgi.gif&#34; alt=&#34;corgi&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;I was born before the internet became widely available. As a teenager, I used various blogging platforms to document my life, but found them unreliable and lacking control over my content. Even now, I struggle to fully own and control my content on social media. However, during the Christmas week of 2022, I learned how to build websites and am excited to share my thoughts, experiences, and journey with you through my own personal website.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>First Post</title>
       <link>http://localhost:1313/posts/first-post/</link>
       <pubDate>Sun, 26 Oct 2025 20:47:16 -0700</pubDate>
       <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;p&gt;Hi this is the first post&lt;/p&gt;</description>
+      <description>&lt;p&gt;Hi this is the first post&#xA;#HHHH&#xA;&lt;strong&gt;tes&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

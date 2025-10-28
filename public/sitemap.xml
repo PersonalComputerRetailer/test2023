@@ -5,17 +5,24 @@
     <loc>http://localhost:1313/about/</loc>
     <lastmod>2025-10-26T20:45:24-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/posts/first-post/</loc>
-    <lastmod>2025-10-26T20:47:16-07:00</lastmod>
+    <loc>http://localhost:1313/tags/blog/</loc>
+    <lastmod>2025-10-27T22:08:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/hugo/</loc>
+    <lastmod>2025-10-27T22:08:51-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/</loc>
-    <lastmod>2025-10-26T20:47:16-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/</loc>
-    <lastmod>2025-10-26T20:47:16-07:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <lastmod>2025-10-27T22:08:51-07:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
+    <lastmod>2025-10-27T22:08:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2025-10-27T22:08:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/add_ga_so_easy/</loc>
+    <lastmod>2025-10-27T22:08:51-07:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/categories/</loc>
   </url>
 </urlset>

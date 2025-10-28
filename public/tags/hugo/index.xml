@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Will&#39;s CYBER WAREHOUSE</title>
-    <link>http://localhost:1313/posts/</link>
-    <description>Recent content in Posts on Will&#39;s CYBER WAREHOUSE</description>
+    <title>Hugo on Will&#39;s CYBER WAREHOUSE</title>
+    <link>http://localhost:1313/tags/hugo/</link>
+    <description>Recent content in Hugo on Will&#39;s CYBER WAREHOUSE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 27 Oct 2025 22:08:51 -0700</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>三步驟在 Hugo 加 Google Analytics</title>
       <link>http://localhost:1313/posts/add_ga_so_easy/</link>

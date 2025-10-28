@@ -3,7 +3,7 @@
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Tags - Will&#39;s CYBER WAREHOUSE</title>
+	<title>三步驟在 Hugo 加 Google Analytics - Will&#39;s CYBER WAREHOUSE</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,6 @@
 
 	<link rel="stylesheet" href="/css/style.css">
 	
-	<link rel="alternate" type="application/rss+xml" href="/tags/index.xml" title="Will's CYBER WAREHOUSE">
 
 	<link rel="shortcut icon" href="/favicon.ico">
 		
@@ -89,42 +88,65 @@
 		<div class="wrapper flex">
 			<div class="primary">
 			
-<main class="main list" role="main">
-	<header class="main__header">
-		<h1 class="main__title">Tags</h1>
-	</header><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/blog/" rel="bookmark">
-			Blog
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article><article class="list__item post">
-	
-	<header class="list__header">
-		<h2 class="list__title post__title">
-			<a href="/tags/hugo/" rel="bookmark">
-			Hugo
-			</a>
-		</h2>
-		
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		
-	</div>
-</article>
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">三步驟在 Hugo 加 Google Analytics</h1>
+			
+		</header>
+		<div class="content post__content clearfix">
+			<ul>
+<li>版本： hugo v0.152.2</li>
+<li>submodules：啟用</li>
+</ul>
+<p>這個版本有內建模板用於 Google Analytics 4。我們要做的就是: 1. 在 header 加入調用模板指令 2. 在 hugo.toml 啟用並且設置 tracking ID。 值得注意的是：在我的例子中，我是透過 submodules 套用別人的模板。 在不更改別人的模板情況下，我需要創建一個 header 副本來覆蓋現在有模板的 header。</p>
+<h2 id="實際操作">實際操作</h2>
+<ol>
+<li>在你的 hugo 跟資料夾，創建覆蓋用的資料夾。然後複製模板的 header 到這個新資料夾</li>
+</ol>
+<pre tabindex="0"><code>mkdir -p layouts/partials
+cp themes/mainroad/layouts/partials/header.html layouts/partials/
+</code></pre><ol start="2">
+<li>編輯 header.html，在 </header> 調用系統內建模板 <code>google_analytics.html</code></li>
+</ol>
+<pre tabindex="0"><code>&lt;header class=&#34;header&#34;&gt;
+        &lt;div class=&#34;container header__container&#34;&gt;
+                {{ partial &#34;logo.html&#34; . }}
+                {{ partial &#34;menu.html&#34; . }}
+        &lt;/div&gt;
+{{ partial &#34;google_analytics.html&#34; . }} # 就是這裡
+&lt;/header&gt;
+</code></pre><ol start="3">
+<li>回到 hugo 根目錄，修改 hugo.toml。加入 tracker ID</li>
+</ol>
+<pre tabindex="0"><code>[services]
+  [services.googleAnalytics]
+    id = &#39;G-XXXXXX&#39; # 這邊取代成你自己的 tracker ID
+</code></pre><p><strong><a href="https://gohugo.io/templates/embedded/#configuration-google-analytics">官網原文: Embedded partial templates. Hugo provides embedded partial templates for common use cases.</a></strong></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/hugo/" rel="tag">hugo</a>
+		</li>
+		<li class="tags__item">
+			<a class="tags__link btn" href="/tags/blog/" rel="tag">blog</a>
+		</li>
+	</ul>
+</div>
+		</footer>
+	</article>
 </main>
+
+
 
 
 			</div>
 			
-
 		</div>
 		<footer class="footer">
 	<div class="container footer__container flex">

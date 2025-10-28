@@ -44,3 +44,7 @@ unsafe = true
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
+
+[services]
+  [services.googleAnalytics]
+    id = "G-6XELVJJ51M"

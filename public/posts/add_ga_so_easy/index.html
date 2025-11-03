@@ -26,7 +26,7 @@
 		<a class="logo__link" href="/" title="Will&#39;s CYBER WAREHOUSE" rel="home">
 			<div class="logo__item logo__text">
 					<div class="logo__title">Will&#39;s CYBER WAREHOUSE</div>
-					
+					<div class="logo__tagline">my permanent cyber space</div>
 				</div>
 		</a>
 	</div>
@@ -92,14 +92,19 @@
 	<article class="post">
 		<header class="post__header">
 			<h1 class="post__title">三步驟在 Hugo 加 Google Analytics</h1>
-			
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-10-27T22:08:51-07:00">October 27, 2025</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/website/" rel="category">Website</a>
+	</span>
+</div></div>
 		</header>
 		<div class="content post__content clearfix">
 			<ul>
 <li>版本： hugo v0.152.2</li>
 <li>submodules：啟用</li>
 </ul>
-<p>這個版本有內建模板用於 Google Analytics 4。我們要做的就是: 1. 在 header 加入調用模板指令 2. 在 hugo.toml 啟用並且設置 tracking ID。 值得注意的是：在我的例子中，我是透過 submodules 套用別人的模板。 在不更改別人的模板情況下，我需要創建一個 header 副本來覆蓋現在有模板的 header。</p>
+<p>這個版本有內建模板用於 Google Analytics 4。我們要做的就是: 1. 在 header 加入調用模板指令 2. 在 hugo.toml 啟用並且設置 tracking ID。 值得注意的是：在我的例子中，我是透過 submodules 套用別人的模板。 在不更改別人的模板情況下，我需要創建一個 header 副本來覆蓋現在有模板的 header。
+&hellip;</p>
 <h2 id="實際操作">實際操作</h2>
 <ol>
 <li>在你的 hugo 跟資料夾，創建覆蓋用的資料夾。然後複製模板的 header 到這個新資料夾</li>
@@ -123,7 +128,6 @@ cp themes/mainroad/layouts/partials/header.html layouts/partials/
   [services.googleAnalytics]
     id = &#39;G-XXXXXX&#39; # 這邊取代成你自己的 tracker ID
 </code></pre><p><strong><a href="https://gohugo.io/templates/embedded/#configuration-google-analytics">官網原文: Embedded partial templates. Hugo provides embedded partial templates for common use cases.</a></strong></p>
-
 		</div>
 		<footer class="post__footer">
 			

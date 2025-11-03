@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Life on Will&#39;s CYBER WAREHOUSE</title>
+    <link>http://localhost:1313/categories/life/</link>
+    <description>Recent content in Life on Will&#39;s CYBER WAREHOUSE</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="http://localhost:1313/categories/life/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pico de Gallo, home recipes</title>
+      <link>http://localhost:1313/posts/test_post2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/test_post2/</guid>
+      <description>&lt;h1 id=&#34;blablablablablablablablablablablablablablablablabla&#34;&gt;BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla&lt;/h1&gt;&#xA;&lt;p&gt;BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla&lt;/p&gt;&#xA;&lt;p&gt;BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla&#xA;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

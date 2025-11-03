@@ -27,7 +27,7 @@
 		<a class="logo__link" href="/" title="Will&#39;s CYBER WAREHOUSE" rel="home">
 			<div class="logo__item logo__text">
 					<div class="logo__title">Will&#39;s CYBER WAREHOUSE</div>
-					
+					<div class="logo__tagline">my permanent cyber space</div>
 				</div>
 		</a>
 	</div>
@@ -100,37 +100,38 @@
 			三步驟在 Hugo 加 Google Analytics
 			</a>
 		</h2>
-		
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-10-27T22:08:51-07:00">October 27, 2025</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/website/" rel="category">Website</a>
+	</span>
+</div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
 		<ul>
 <li>版本： hugo v0.152.2</li>
 <li>submodules：啟用</li>
 </ul>
-<p>這個版本有內建模板用於 Google Analytics 4。我們要做的就是: 1. 在 header 加入調用模板指令 2. 在 hugo.toml 啟用並且設置 tracking ID。 值得注意的是：在我的例子中，我是透過 submodules 套用別人的模板。 在不更改別人的模板情況下，我需要創建一個 header 副本來覆蓋現在有模板的 header。</p>
-<h2 id="實際操作">實際操作</h2>
-<ol>
-<li>在你的 hugo 跟資料夾，創建覆蓋用的資料夾。然後複製模板的 header 到這個新資料夾</li>
-</ol>
-<pre tabindex="0"><code>mkdir -p layouts/partials
-cp themes/mainroad/layouts/partials/header.html layouts/partials/
-</code></pre><ol start="2">
-<li>編輯 header.html，在 </header> 調用系統內建模板 <code>google_analytics.html</code></li>
-</ol>
-<pre tabindex="0"><code>&lt;header class=&#34;header&#34;&gt;
-        &lt;div class=&#34;container header__container&#34;&gt;
-                {{ partial &#34;logo.html&#34; . }}
-                {{ partial &#34;menu.html&#34; . }}
-        &lt;/div&gt;
-{{ partial &#34;google_analytics.html&#34; . }} # 就是這裡
-&lt;/header&gt;
-</code></pre><ol start="3">
-<li>回到 hugo 根目錄，修改 hugo.toml。加入 tracker ID</li>
-</ol>
-<pre tabindex="0"><code>[services]
-  [services.googleAnalytics]
-    id = &#39;G-XXXXXX&#39; # 這邊取代成你自己的 tracker ID
-</code></pre><p><strong><a href="https://gohugo.io/templates/embedded/#configuration-google-analytics">官網原文: Embedded partial templates. Hugo provides embedded partial templates for common use cases.</a></strong></p>
+<p>這個版本有內建模板用於 Google Analytics 4。我們要做的就是: 1. 在 header 加入調用模板指令 2. 在 hugo.toml 啟用並且設置 tracking ID。 值得注意的是：在我的例子中，我是透過 submodules 套用別人的模板。 在不更改別人的模板情況下，我需要創建一個 header 副本來覆蓋現在有模板的 header。
+&hellip;</p>
+	</div>
+</article><article class="list__item post">
+	
+	<header class="list__header">
+		<h2 class="list__title post__title">
+			<a href="/posts/picodegarllo/" rel="bookmark">
+			Pico de Gallo, home recipes
+			</a>
+		</h2>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2023-07-04T00:00:00Z">July 04, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/life/" rel="category">Life</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		<img src="/img/picodegallo.webp" alt="Pico de Gallo" style="float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;">
+I have an immense fondness for pico de gallo. Its tantalizing flavors make my mouth water. However, I often find myself dissatisfied with the portion served in stores. Determined to satisfy my cravings, I took matters into my own hands, making a generous amount while customizing the seasoning to perfectly suit my taste buds.
+...
 	</div>
 </article>
 </main>
@@ -138,7 +139,70 @@ cp themes/mainroad/layouts/partials/header.html layouts/partials/
 
 			</div>
 			
+<aside class="sidebar sidebar--left"><div class="widget-search widget">
+	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
+		<input class="widget-search__field" type="search" placeholder="Search…" value="" name="q" aria-label="Search…">
+		<input class="widget-search__submit" type="submit" value="Search">
+		<input type="hidden" name="sitesearch" value="http://localhost:1313/">
+	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/posts/add_ga_so_easy/">三步驟在 Hugo 加 Google Analytics</a></li>
+			<li class="widget__item"><a class="widget__link" href="/posts/picodegarllo/">Pico de Gallo, home recipes</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/life/">Life</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/website/">Website</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-taglist widget">
+	<h4 class="widget__title">Tags</h4>
+	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/blog/" title="Blog">Blog (1)</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/hugo/" title="Hugo">Hugo (1)</a>
+	</div>
+</div>
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Twitter" rel="noopener noreferrer" href="https://twitter.com/william_y_chen" target="_blank">
+				<svg class="widget-social__link-icon icon icon-twitter" width="24" height="24" viewBox="0 0 384 312"><path d="m384 36.9c-14.1 6.3-29.3 10.5-45.2 12.4 16.3-9.7 28.8-25.2 34.6-43.6-15.2 9-32.1 15.6-50 19.1-14.4-15.2-34.9-24.8-57.5-24.8-43.5 0-78.8 35.3-78.8 78.8 0 6.2.7 12.2 2 17.9-65.5-3.3-123.5-34.6-162.4-82.3-6.7 11.6-10.6 25.2-10.6 39.6 0 27.3 13.9 51.4 35 65.6-12.9-.4-25.1-4-35.7-9.9v1c0 38.2 27.2 70 63.2 77.2-6.6 1.8-13.6 2.8-20.8 2.8-5.1 0-10-.5-14.8-1.4 10 31.3 39.1 54.1 73.6 54.7-27 21.1-60.9 33.7-97.8 33.7-6.4 0-12.6-.4-18.8-1.1 34.9 22.4 76.3 35.4 120.8 35.4 144.9 0 224.1-120 224.1-224.1 0-3.4-.1-6.8-.2-10.2 15.4-11.1 28.7-25 39.3-40.8z"/></svg>
+				<span>Twitter</span>
+			</a>
+		</div>
 
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Bandcamp (My musics)"  rel="noopener noreferrer" href="https://dryachen.bandcamp.com/" target="_blank">
+				<span>Bandcamp (My musics)</span>
+			</a>
+		</div>
+		
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="Sptify (My musics)"  rel="noopener noreferrer" href="https://open.spotify.com/artist/1SXDqHueTbSSOVSpQZ3btU" target="_blank">
+				<span>Sptify (My musics)</span>
+			</a>
+		</div>
+		
+	</div>
+</div>
+</aside>
 		</div>
 		<footer class="footer">
 	<div class="container footer__container flex">

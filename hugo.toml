@@ -4,6 +4,10 @@ title = "Will's CYBER WAREHOUSE"
 theme = "mainroad"
 publishDir = "public"
 
+[Params.logo]
+  title = "Will's CYBER WAREHOUSE"
+  subtitle = "my permanent cyber space"
+
 [menu]
   [[menu.main]]
     identifier = "posts"
@@ -23,6 +27,55 @@ publishDir = "public"
     url = "/bookmarks/"
     weight = 40
 
+[Params]
+  post_meta = ["author", "date", "categories"]
+  author = "WILL"
+  summaryLength = 10
+
+[Params.sidebar]
+  home = "left" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  widgets = ["search", "recent", "categories", "taglist", "social"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  categories_counter = true # Enable counter for each category in "Categories" widget
+  tags_counter = true # Enable counter for each tag in "Tags" widget
+
+# Sidebar strongly affects overall build time, especially if you are using all of our widgets or even more. 
+# Widget caching can significantly improve the generation time. 
+# Cached partials remain the same for all affected pages and are not generated multiple times by Hugo. 
+# All built-in widgets (search, recent, categories, taglist, social, languages) support caching.
+[params.widgets.search]
+  cached = true
+  url = "https://www.bing.com/search"
+
+  [params.widgets.search.input]
+    name = "q"
+    pre = "site:willscyber.net "
+
+[Params.widgets.recent]
+  cached = true
+
+[Params.widgets.categories]
+  cached = true
+
+[Params.widgets.taglist]
+  cached = true
+
+[Params.widgets.social]
+  cached = true
+  twitter = "william_y_chen"
+  [[Params.widgets.social.custom]]
+    title = "Bandcamp (My musics)"
+    url = "https://dryachen.bandcamp.com/"
+    #icon = "img/bandcamp.img.jpg"
+  [[Params.widgets.social.custom]]
+    title = "Sptify (My musics)"
+    url = "https://open.spotify.com/artist/1SXDqHueTbSSOVSpQZ3btU"
+
+#
 # If you're deploying from the `hugo` branch
 [deployment]
   [[deployment.targets]]
@@ -33,10 +86,6 @@ publishDir = "public"
 
 [markup.goldmark.renderer]
 unsafe = true
-
-[params]
-  author = "WILL"
-  description = "Tech notes, experiments, and thoughts from my cyber warehouse."
 
 [caches]
   [caches.images]

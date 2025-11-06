@@ -16,6 +16,13 @@
       <description>&lt;ul&gt;&#xA;&lt;li&gt;版本： hugo v0.152.2&lt;/li&gt;&#xA;&lt;li&gt;submodules：啟用&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;這個版本有內建模板用於 Google Analytics 4。我們要做的就是: 1. 在 header 加入調用模板指令 2. 在 hugo.toml 啟用並且設置 tracking ID。 值得注意的是：在我的例子中，我是透過 submodules 套用別人的模板。 在不更改別人的模板情況下，我需要創建一個 header 副本來覆蓋現在有模板的 header。&#xA;&amp;hellip;&lt;/p&gt;</description>
     </item>
     <item>
+      <title>Welcoming Our Second Daughter Miss. Jojo</title>
+      <link>http://localhost:1313/posts/jojo/</link>
+      <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/jojo/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/img/MissJ.webp&#34; alt=&#34;Jojo&#34; style=&#34;float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;&#34;&gt;&#xA;&lt;strong id=&#39;lead&#39;&gt;A Smooth Birth Experience&lt;/strong&gt;&#xA;&lt;p&gt;In September our family welcomed our second daughter into the world marking the beginning of a new chapter filled with joy and anticipation. We were released in 48 hours, mother and child are healthy and safe to home.&lt;/p&gt;&#xA;&lt;p&gt;Special thanks to our friend who let our elder daughter stayed in their house for two days.&#xA;&amp;hellip;&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Pico de Gallo, home recipes</title>
       <link>http://localhost:1313/posts/picodegarllo/</link>
       <pubDate>Tue, 04 Jul 2023 00:00:00 +0000</pubDate>

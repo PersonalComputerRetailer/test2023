@@ -15,17 +15,17 @@ publishDir = "public"
     url = "/posts/"
     weight = 20
 
-  [[menu.main]]
-    identifier = "tools"
-    name = "Tools"
-    url = "/tools/"
-    weight = 30
+#  [[menu.main]]
+#    identifier = "tools"
+#    name = "Tools"
+#    url = "/tools/"
+#    weight = 30
 
-  [[menu.main]]
-    identifier = "bookmarks"
-    name = "Booksmarks"
-    url = "/bookmarks/"
-    weight = 40
+#  [[menu.main]]
+#    identifier = "bookmarks"
+#    name = "Booksmarks"
+#    url = "/bookmarks/"
+#    weight = 40
 
 [Params]
   post_meta = ["author", "date", "categories"]

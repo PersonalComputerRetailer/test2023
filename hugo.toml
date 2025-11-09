@@ -3,6 +3,8 @@ languageCode = 'en-us'
 title = "Will's CYBER WAREHOUSE"
 theme = "mainroad"
 publishDir = "public"
+[pagination]
+  pagerSize = 5
 
 [Params.logo]
   title = "Will's CYBER WAREHOUSE"

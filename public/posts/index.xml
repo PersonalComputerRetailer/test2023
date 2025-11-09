@@ -36,5 +36,19 @@
       <guid>http://localhost:1313/posts/picodegarllo/</guid>
       <description>&lt;img src=&#34;http://localhost:1313/img/picodegallo.webp&#34; alt=&#34;Pico de Gallo&#34; style=&#34;float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;&#34;&gt;&#xA;I have an immense fondness for pico de gallo. Its tantalizing flavors make my mouth water. However, I often find myself dissatisfied with the portion served in stores. Determined to satisfy my cravings, I took matters into my own hands, making a generous amount while customizing the seasoning to perfectly suit my taste buds.&#xA;...</description>
     </item>
+    <item>
+      <title>Conference trip in New York</title>
+      <link>http://localhost:1313/posts/cshl_2023/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cshl_2023/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/img/CSHL_water.webp&#34; alt=&#34;Pico de Gallo&#34; style=&#34;float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;&#34;&gt;&#xA;I had cold water shower challenge for 4 nights. I just came back from a trip to New York, where I attended a conference related to my field. It was my first time visiting the Big Apple since 2017, and I had a blast!...</description>
+    </item>
+    <item>
+      <title>Arizona Indian Festival 2023</title>
+      <link>http://localhost:1313/posts/az_indian_festival/</link>
+      <pubDate>Sun, 05 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/az_indian_festival/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/img/indian_doll.webp&#34; alt=&#34;doll&#34; style=&#34;float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;&#34;&gt;&#xA;It was an educative opportunity. I had the opportunity to attend the American Indian Festival in Scottsdale today.&#xA;The festival was a fantastic learning experience for children and adults alike, showcasing the diverse cultures of the 22 tribes in the state.&#xA;...</description>
+    </item>
   </channel>
 </rss>

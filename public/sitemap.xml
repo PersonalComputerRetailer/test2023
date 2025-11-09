@@ -29,10 +29,19 @@
     <loc>http://localhost:1313/posts/add_ga_so_easy/</loc>
     <lastmod>2025-10-27T22:08:51-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/tags/family/</loc>
-    <lastmod>2023-09-08T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/tags/camping/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/categories/life/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/nature/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/posts/yavapai_camp/</loc>
+    <lastmod>2024-06-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/tags/family/</loc>
     <lastmod>2023-09-08T00:00:00+00:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/posts/jojo/</loc>

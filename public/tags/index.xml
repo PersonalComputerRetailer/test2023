@@ -23,6 +23,20 @@
       <description></description>
     </item>
     <item>
+      <title>Camping</title>
+      <link>http://localhost:1313/tags/camping/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/camping/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nature</title>
+      <link>http://localhost:1313/tags/nature/</link>
+      <pubDate>Sat, 01 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/nature/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Family</title>
       <link>http://localhost:1313/tags/family/</link>
       <pubDate>Fri, 08 Sep 2023 00:00:00 +0000</pubDate>

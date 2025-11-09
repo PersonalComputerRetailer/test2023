@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Conference on Will&#39;s CYBER WAREHOUSE</title>
+    <link>http://localhost:1313/tags/conference/</link>
+    <description>Recent content in Conference on Will&#39;s CYBER WAREHOUSE</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 13 May 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/conference/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Conference trip in New York</title>
+      <link>http://localhost:1313/posts/cshl_2023/</link>
+      <pubDate>Sat, 13 May 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/posts/cshl_2023/</guid>
+      <description>&lt;img src=&#34;http://localhost:1313/img/CSHL_water.webp&#34; alt=&#34;Pico de Gallo&#34; style=&#34;float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;&#34;&gt;&#xA;I had cold water shower challenge for 4 nights. I just came back from a trip to New York, where I attended a conference related to my field. It was my first time visiting the Big Apple since 2017, and I had a blast!...</description>
+    </item>
+  </channel>
+</rss>

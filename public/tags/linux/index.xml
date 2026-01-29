@@ -6,14 +6,14 @@
     <description>Recent content in Linux on Will&#39;s CYBER WAREHOUSE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://willscyber.net/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動</title>
       <link>https://willscyber.net/posts/install-dwa-x1850-driver/</link>
-      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
       <guid>https://willscyber.net/posts/install-dwa-x1850-driver/</guid>
-      <description>&lt;h1 id=&#34;在-ubuntu-2404-安裝-d-link-dwa-x1850-無線網卡驅動全紀錄&#34;&gt;在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動全紀錄&lt;/h1&gt;&#xA;&lt;p&gt;這篇文章紀錄了如何解決 D-Link DWA-X1850 (Realtek 8852au) 在 Linux 上無法辨識的問題，包含編譯驅動、手動修正硬體 ID 以及解除 RF-kill 鎖定的完整流程。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;安裝環境資訊&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;OS: Ubuntu 24.04 LTS (Kernel 6.8.0-71-generic)&lt;/li&gt;&#xA;&lt;li&gt;Hardware: D-Link DWA-X1850 (USB ID: 2001:332c)&lt;/li&gt;&#xA;&lt;li&gt;Compiler: gcc-13&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;ol start=&#34;2&#34;&gt;&#xA;&lt;li&gt;安裝必要套件&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;sudo apt update&#xA;&#xA;sudo apt install git build-essential linux-headers-$(uname -r) bc dkms usb_modeswitch&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;若有 Conda 環境，請先執行 &lt;code&gt;conda deactivate&lt;/code&gt;&lt;/p&gt;&#xA;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;下載並編譯驅動&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;git clone -b dwa-x1850 https://github.com/lwfinger/rtl8852au.git&#xA;&#xA;cd rtl8852au&#xA;&#xA;&#xA;make&#xA;&#xA;sudo make install&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;ol start=&#34;3&#34;&gt;&#xA;&lt;li&gt;硬體識別檢查&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;# 檢查裝置是否被系統偵測到 (應看到 2001:332c)&#xA;lsusb&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;以我們的 case ID 是 2001:332c&lt;/p&gt;</description>
+      <description>&lt;p&gt;這篇文章紀錄了如何解決 D-Link DWA-X1850 (Realtek 8852au) 在 Linux 上無法辨識的問題，包含編譯驅動、手動修正硬體 ID 以及解除 RF-kill 鎖定的完整流程。&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;安裝環境資訊&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;OS: Ubuntu 24.04 LTS (Kernel 6.8.0-71-generic)&lt;/li&gt;&#xA;&lt;li&gt;Hardware: D-Link DWA-X1850 (USB ID: 2001:332c)&lt;/li&gt;&#xA;&lt;li&gt;Compiler: gcc-13&#xA;&amp;hellip;&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
     </item>
   </channel>
 </rss>

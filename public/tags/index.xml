@@ -6,8 +6,15 @@
     <description>Recent content in Tags on Will&#39;s CYBER WAREHOUSE</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 27 Oct 2025 22:08:51 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 28 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://willscyber.net/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux</title>
+      <link>https://willscyber.net/tags/linux/</link>
+      <pubDate>Wed, 28 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://willscyber.net/tags/linux/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Blog</title>
       <link>https://willscyber.net/tags/blog/</link>
@@ -20,13 +27,6 @@
       <link>https://willscyber.net/tags/hugo/</link>
       <pubDate>Mon, 27 Oct 2025 22:08:51 -0700</pubDate>
       <guid>https://willscyber.net/tags/hugo/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Linux</title>
-      <link>https://willscyber.net/tags/linux/</link>
-      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
-      <guid>https://willscyber.net/tags/linux/</guid>
       <description></description>
     </item>
     <item>

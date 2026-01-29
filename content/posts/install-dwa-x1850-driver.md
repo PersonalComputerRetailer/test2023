@@ -1,5 +1,5 @@
 +++
-date = '2025-01-28'
+date = '2026-01-28'
 draft = false
 title = '在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動'
 tags = ["Linux"]
@@ -7,13 +7,14 @@ categories = ["技術筆記"]
 author = ["Will"]
 +++
 
-# 在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動全紀錄
 這篇文章紀錄了如何解決 D-Link DWA-X1850 (Realtek 8852au) 在 Linux 上無法辨識的問題，包含編譯驅動、手動修正硬體 ID 以及解除 RF-kill 鎖定的完整流程。
 
 1. 安裝環境資訊
 - OS: Ubuntu 24.04 LTS (Kernel 6.8.0-71-generic)
 - Hardware: D-Link DWA-X1850 (USB ID: 2001:332c)
 - Compiler: gcc-13
+...<!--more-->
+<div style="clear:both;"></div>
 
 2. 安裝必要套件
 

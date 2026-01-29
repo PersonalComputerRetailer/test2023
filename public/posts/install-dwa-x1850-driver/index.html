@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Pico de Gallo, home recipes - Will&#39;s CYBER WAREHOUSE</title>
+	<title>在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動 - Will&#39;s CYBER WAREHOUSE</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -92,39 +92,86 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Pico de Gallo, home recipes</h1>
+			<h1 class="post__title">在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動</h1>
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2023-07-04T00:00:00Z">July 04, 2023</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/life/" rel="category">Life</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0a14 14 0 1 1 0 28 1 1 0 0 1 0-28m0 3a3 3 0 1 0 0 22 3 3 0 0 0 0-22m1 4h-2v8.4l6.8 4.4L22 18l-6-3.8z"/></svg><time class="meta__text" datetime="2025-01-28T00:00:00Z">January 28, 2025</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2 1 2h8v11H0V2z"/></svg><span class="meta__text"><a class="meta__link" href="/categories/%E6%8A%80%E8%A1%93%E7%AD%86%E8%A8%98/" rel="category">技術筆記</a>
 	</span>
 </div></div>
 		</header>
 		<div class="content post__content clearfix">
-			<img src="/img/picodegallo.webp" alt="Pico de Gallo" style="float:left; margin: 0.7rem 1rem 0.7rem 0; width:250px;">
-I have an immense fondness for pico de gallo. Its tantalizing flavors make my mouth water. However, I often find myself dissatisfied with the portion served in stores. Determined to satisfy my cravings, I took matters into my own hands, making a generous amount while customizing the seasoning to perfectly suit my taste buds.
-...
-<div style="clear:both;"></div>
-<h2 id="basic-ingredients">Basic ingredients</h2>
-<p>Prepare a big bowl and combine the following ingredients, ensuring thorough mixing.</p>
+			<h1 id="在-ubuntu-2404-安裝-d-link-dwa-x1850-無線網卡驅動全紀錄">在 Ubuntu 24.04 安裝 D-Link DWA-X1850 無線網卡驅動全紀錄</h1>
+<p>這篇文章紀錄了如何解決 D-Link DWA-X1850 (Realtek 8852au) 在 Linux 上無法辨識的問題，包含編譯驅動、手動修正硬體 ID 以及解除 RF-kill 鎖定的完整流程。</p>
+<ol>
+<li>安裝環境資訊</li>
+</ol>
 <ul>
-<li>Dice 7 Roma tamatos</li>
-<li>Dice half onion</li>
-<li>Squezz a whoe lime juice</li>
-<li>2 tea spoon of salt</li>
+<li>OS: Ubuntu 24.04 LTS (Kernel 6.8.0-71-generic)</li>
+<li>Hardware: D-Link DWA-X1850 (USB ID: 2001:332c)</li>
+<li>Compiler: gcc-13</li>
 </ul>
-<h2 id="adjustable-ingredients">Adjustable ingredients</h2>
-<p>Feel free to adjust the amount according to your personal preference.</p>
-<ul>
-<li>Dice clove(s) of garlic</li>
-<li>Dice few Jalapeño/Serrano/Habanero (Hot level: mild/mideum/hell)</li>
-</ul>
-<h2 id="secret-home-seasoning">Secret home seasoning</h2>
-<p>I understand that it might sound unusual, but I encourage you to take a small portion and give it a try.</p>
-<ul>
-<li>2 tea spoon of sugar</li>
-<li>Add a pinch of MSG (monosodium glutamate), the renowned flavor enhancer. Contrary to common misconceptions, using MSG in moderation is safe and it is not consumed on a daily basis. Feel free to incorporate it into your recipe occasionally for an extra burst of flavor.</li>
-</ul>
-<p>I don&rsquo;t just use this salsa for tortillas; it also pairs wonderfully with chicken breast. Both combinations are incredibly delicious.</p>
+<ol start="2">
+<li>安裝必要套件</li>
+</ol>
+<pre tabindex="0"><code>sudo apt update
+
+sudo apt install git build-essential linux-headers-$(uname -r) bc dkms usb_modeswitch
+</code></pre><p>若有 Conda 環境，請先執行 <code>conda deactivate</code></p>
+<ol start="3">
+<li>下載並編譯驅動</li>
+</ol>
+<pre tabindex="0"><code>git clone -b dwa-x1850 https://github.com/lwfinger/rtl8852au.git
+
+cd rtl8852au
+
+
+make
+
+sudo make install
+</code></pre><ol start="3">
+<li>硬體識別檢查</li>
+</ol>
+<pre tabindex="0"><code># 檢查裝置是否被系統偵測到 (應看到 2001:332c)
+lsusb
+</code></pre><p>以我們的 case ID 是 2001:332c</p>
+<pre tabindex="0"><code>Bus 001 Device 002: ID 2001:332c D-Link Corp. 802.11ax WLAN Adapter
+</code></pre><ol start="4">
+<li>載入驅動模組</li>
+</ol>
+<pre tabindex="0"><code>sudo modprobe 8852au
+
+# 檢查驅動模組是否已成功載入核心
+lsmod | grep 8852au
+</code></pre><p>輸出</p>
+<pre tabindex="0"><code>8852au              14282752  0
+cfg80211             1355776  1 8852au
+</code></pre><ol start="5">
+<li>強制驅動程式識別你的硬體 ID</li>
+</ol>
+<pre tabindex="0"><code>echo &#34;2001 332c&#34; | sudo tee /sys/bus/usb/drivers/rtl8852au/new_id
+</code></pre><ol start="6">
+<li>啟用網卡介面 (介面名稱可透過 ip link 查詢，例如 wlxa42a9573b3e7)</li>
+</ol>
+<pre tabindex="0"><code>sudo ip link set wlxa42a9573b3e7 up
+</code></pre><ol start="7">
+<li>解除 RF-kill 軟體鎖定 (Optional)</li>
+</ol>
+<p>若出現 <code>RTNETLINK answers: Operation not possible due to RF-kill</code>：</p>
+<pre tabindex="0"><code>sudo rfkill unblock all
+sudo ip link set wlxa42a9573b3e7 up
+</code></pre><ol start="8">
+<li>設定永久生效 (防止重啟失效)</li>
+</ol>
+<p>建立 udev 規則檔案： <code>sudo nano /etc/udev/rules.d/99-dwa-x1850.rules</code> 寫入以下內容： <code>ACTION==&quot;add&quot;, SUBSYSTEM==&quot;usb&quot;, ATTR{idVendor}==&quot;2001&quot;, ATTR{idProduct}==&quot;332c&quot;, RUN+=&quot;/sbin/modprobe 8852au&quot;, RUN+=&quot;/bin/sh -c 'echo 2001 332c &gt; /sys/bus/usb/drivers/rtl8852au/new_id'&quot;</code></p>
+<ol start="9">
+<li>後續維護</li>
+</ol>
+<p>若更新系統核心 (Kernel) 後 Wi-Fi 消失，需回到資料夾重新執行：</p>
+<pre tabindex="0"><code>cd rtl8852au
+git pull
+make
+sudo make install
+</code></pre>
 		</div>
 		<footer class="post__footer">
 			
@@ -132,7 +179,7 @@ I have an immense fondness for pico de gallo. Its tantalizing flavors make my mo
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M4 0h8s2 0 4 2l15 15s2 2 0 4L21 31s-2 2-4 0L2 16s-2-2-2-4V3s0-3 4-3m3 10a3 3 0 0 0 0-6 3 3 0 0 0 0 6"/></svg>
 	<ul class="tags__list">
 		<li class="tags__item">
-			<a class="tags__link btn" href="/tags//" rel="tag"></a>
+			<a class="tags__link btn" href="/tags/linux/" rel="tag">Linux</a>
 		</li>
 	</ul>
 </div>

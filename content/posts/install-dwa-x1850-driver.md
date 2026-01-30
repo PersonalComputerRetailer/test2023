@@ -97,6 +97,61 @@ sudo ip link set wlxa42a9573b3e7 up
 ```
 cd rtl8852au
 git pull
+make clean
 make
 sudo make install
+sudo modprobe 8852au
+echo "2001 332c" | sudo tee /sys/bus/usb/drivers/rtl8852au/new_id
+sudo rfkill unblock all
+# ip link 可以查界面名稱。這邊以 wlxa42a9573b3e7 為例
+sudo ip link set wlxa42a9573b3e7 up
 ```
+
+## 進階：使用 DKMS 防止核心更新後失效
+每次 Ubuntu 更新 Kernel，自行編譯的驅動就會消失。我們可以使用 DKMS (Dynamic Kernel Module Support) 來自動維護。
+
+### 查詢驅動版本
+在執行 DKMS 之前，我們需要確認驅動版本：
+```
+modinfo 8852au | grep ^version
+# 或查看標頭檔
+cd rtl8852au
+cat include/rtw_version.h
+```
+
+設定 DKMS
+假設版本號為 1.15.0.1，執行以下步驟：
+
+```
+# 將原始碼複製到系統目錄
+sudo cp -r . /usr/src/8852au-1.15.0.1
+
+# 註冊並安裝
+sudo dkms add -m 8852au -v 1.15.0.1
+sudo dkms build -m 8852au -v 1.15.0.1
+sudo dkms install -m 8852au -v 1.15.0.1
+```
+完成後，可透過 dkms status 確認狀態。
+
+結語：配置好 DKMS 與 udev 後，即使更新系統核心或重新拔插網卡，Wi-Fi 也能穩定運作！
+
+### FAQ
+Q: 執行 dkms status 出現 "Diff between built and installed module" 警告怎麼辦？ 
+
+A: 這是因為手動安裝 (make install) 與 DKMS 安裝衝突。建議先卸載模組後，使用 dkms install 重新覆蓋即可解決。
+```
+# 先卸載模組
+sudo modprobe -r 8852au
+
+# 讓 DKMS 重新安裝一次，覆蓋手動安裝的版本
+sudo dkms remove 8852au/1.15.0.1 --all
+sudo dkms install 8852au/1.15.0.1 --force
+
+# 重新載入
+sudo modprobe 8852au
+echo "2001 332c" | sudo tee /sys/bus/usb/drivers/rtl8852au/new_id
+sudo rfkill unblock all
+# ip link 可以查界面名稱。這邊以 wlxa42a9573b3e7 為例
+sudo ip link set wlxa42a9573b3e7 up
+```
+執行 dkms status，如果警告消失，只剩下 installed，那就代表 DKMS 已經完美接管，未來的核心更新也會更穩定。

@@ -7,6 +7,10 @@ categories = ["技術筆記"]
 author = ["Will"]
 +++
 
+這篇文章紀錄 Ubuntu 24.04 更新後出現 Kernel Panic、無法開機的排查與修復過程：先使用舊版 Kernel 開機，再找出 Realtek 8852au 驅動的 DKMS 編譯失敗，最後完成核心安裝，無須重灌系統或格式化磁碟。
+...<!--more-->
+<div style="clear:both;"></div>
+
 # Ubuntu 更新後無法開機？一次 Kernel Panic 與 DKMS 驅動衝突的修復紀錄
 
 **環境：** Ubuntu 24.04 LTS  

@@ -7,6 +7,10 @@ categories = ["技術筆記"]
 author = ["Will"]
 +++
 
+After an Ubuntu 24.04 update, a kernel panic prevented my computer from booting. This post documents how I used an older kernel to investigate an incomplete update, identified a failed Realtek 8852au DKMS build, and restored the system without reinstalling Ubuntu or losing personal data.
+...<!--more-->
+<div style="clear:both;"></div>
+
 # Ubuntu 24.04 Kernel Panic After an Update: How I Fixed a Failed DKMS Build (Realtek 8852au)
 
 **Environment:** Ubuntu 24.04 LTS  

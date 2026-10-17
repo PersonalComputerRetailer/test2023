@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DKMS on Will's CYBER WAREHOUSE</title><link>https://willscyber.net/tags/dkms/</link><description>Recent content in DKMS on Will's CYBER WAREHOUSE</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 16 Oct 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://willscyber.net/tags/dkms/index.xml" rel="self" type="application/rss+xml"/><item><title>Ubuntu 24.04 Kernel Panic After an Update: Fixing a Failed DKMS Build</title><link>https://willscyber.net/posts/ubuntu-24-04-kernel-panic-dkms/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://willscyber.net/posts/ubuntu-24-04-kernel-panic-dkms/</guid><description>&lt;h1 id="ubuntu-2404-kernel-panic-after-an-update-how-i-fixed-a-failed-dkms-build-realtek-8852au"&gt;Ubuntu 24.04 Kernel Panic After an Update: How I Fixed a Failed DKMS Build (Realtek 8852au)&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;Environment:&lt;/strong&gt; Ubuntu 24.04 LTS&lt;br&gt;
+&lt;strong&gt;Affected kernel:&lt;/strong&gt; 6.8.0-147-generic&lt;br&gt;
+&lt;strong&gt;Last working kernel:&lt;/strong&gt; 6.8.0-146-generic&lt;br&gt;
+&lt;strong&gt;Issue:&lt;/strong&gt; Kernel panic, incomplete kernel installation, DKMS driver incompatibility&lt;br&gt;
+&lt;strong&gt;Outcome:&lt;/strong&gt; Successfully repaired without reinstalling Ubuntu or losing personal data&lt;/p&gt;
+&lt;h2 id="1-the-problem-ubuntu-wouldnt-boot-after-an-update"&gt;1. The Problem: Ubuntu Wouldn&amp;rsquo;t Boot After an Update&lt;/h2&gt;
+&lt;p&gt;After a routine Ubuntu system update, my computer suddenly failed to boot. Instead of reaching the desktop, it stopped at a kernel panic.&lt;/p&gt;</description></item><item><title>Ubuntu 更新後無法開機？一次 Kernel Panic 與 DKMS 驅動衝突的修復紀錄</title><link>https://willscyber.net/posts/ubuntu-update-kernel-panic-dkms/</link><pubDate>Fri, 16 Oct 2026 00:00:00 +0000</pubDate><guid>https://willscyber.net/posts/ubuntu-update-kernel-panic-dkms/</guid><description>&lt;h1 id="ubuntu-更新後無法開機一次-kernel-panic-與-dkms-驅動衝突的修復紀錄"&gt;Ubuntu 更新後無法開機？一次 Kernel Panic 與 DKMS 驅動衝突的修復紀錄&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;環境：&lt;/strong&gt; Ubuntu 24.04 LTS&lt;br&gt;
+&lt;strong&gt;問題 Kernel：&lt;/strong&gt; 6.8.0-147-generic&lt;br&gt;
+&lt;strong&gt;可正常開機 Kernel：&lt;/strong&gt; 6.8.0-146-generic&lt;br&gt;
+&lt;strong&gt;問題類型：&lt;/strong&gt; Kernel Panic、DKMS 編譯失敗、第三方 Wi-Fi 驅動不相容&lt;br&gt;
+&lt;strong&gt;修復結果：&lt;/strong&gt; 成功，無須重灌系統&lt;/p&gt;
+&lt;h2 id="一問題發生ubuntu-更新後無法開機"&gt;一、問題發生：Ubuntu 更新後無法開機&lt;/h2&gt;
+&lt;p&gt;某次 Ubuntu 系統更新後，重新啟動電腦時，系統突然無法進入桌面，而是停留在 Kernel Panic 畫面。&lt;/p&gt;
+&lt;p&gt;主要錯誤訊息如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"&gt;&lt;code class="language-text" data-lang="text"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;/dev/root: Can&amp;#39;t open blockdev
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;VFS: Cannot open root device &amp;#34;/dev/nvme0n1p2&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;or unknown-block(0,0): error -6
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;Kernel panic - not syncing:
+&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;VFS: Unable to mount root fs on unknown-block(0,0)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;即使嘗試進入 Recovery Mode，仍然發生相同問題。&lt;/p&gt;
+&lt;p&gt;從錯誤訊息判斷，Linux Kernel 無法找到或掛載根檔案系統（root filesystem）。&lt;/p&gt;</description></item></channel></rss>
